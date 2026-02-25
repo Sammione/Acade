@@ -1,0 +1,18 @@
+{
+  "name": "acadence",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "lucide-react": "^0.575.0",
+    "react-router-dom": "^7.13.1"
+  }
+}

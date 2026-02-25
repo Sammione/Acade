@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses | Acadence</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+    <div class="blob-bg"></div>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Acadence<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="playground.html">Playground</a></li>
+                <li><a href="pathfinder.html">Path Finder</a></li>
+                <li><a href="experts.html">Experts</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <button class="btn-primary">Enroll Now</button>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <section class="section-header reveal active">
+            <span class="badge">Course Catalog</span>
+            <h2>Master the <span>Modern Tech Stack</span></h2>
+            <p>Expert-led courses designed for high-performance careers in Data & AI.</p>
+        </section>
+
+        <section class="courses-detailed grid reveal active">
+            <!-- Course Card 1 -->
+            <div class="course-card-expanded tilt-card">
+                <div class="course-main-info">
+                    <div class="course-thumb data"></div>
+                    <div class="course-content">
+                        <span class="course-tag">Beginner</span>
+                        <h3>Python for Data Analysis</h3>
+                        <p>Master the tools of the trade from scratch. We cover the entire ecosystem used by top labs.
+                        </p>
+                        <div class="course-meta">
+                            <span>⏱️ 12 Weeks</span>
+                            <span>⭐ 4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-curriculum">
+                    <h4>Module Breakdown</h4>
+                    <ul>
+                        <li><span>01</span> Pythonic Fundamentals</li>
+                        <li><span>02</span> Pandas & Data Wrangling</li>
+                        <li><span>03</span> Visual Intelligence (Seaborn)</li>
+                        <li><span>04</span> Statistical foundations</li>
+                    </ul>
+                    <div class="curriculum-dropdown">
+                        <button class="dropdown-trigger">See Full Curriculum ↓</button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-inner">
+                                <h5>Advanced Topics Included:</h5>
+                                <p>• Clean Code with Type Hinting</p>
+                                <p>• Scikit-learn Pipeline Integration</p>
+                                <p>• Dask for Large Scale Processing</p>
+                                <p>• Time Series Analysis Fundamentals</p>
+                                <p>• API Integration with FastAPI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="course-card-expanded tilt-card">
+                <div class="course-main-info">
+                    <div class="course-thumb ml"></div>
+                    <div class="course-content">
+                        <span class="course-tag">Intermediate</span>
+                        <h3>Machine Learning Mastery</h3>
+                        <p>Move beyond linear regression. Architect complex pipelines and handle big data.</p>
+                        <div class="course-meta">
+                            <span>⏱️ 14 Weeks</span>
+                            <span>⭐ 4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-curriculum">
+                    <h4>Module Breakdown</h4>
+                    <ul>
+                        <li><span>01</span> Feature Engineering</li>
+                        <li><span>02</span> Ensemble Methods & XGBoost</li>
+                        <li><span>03</span> Hyperparameter Tuning</li>
+                        <li><span>04</span> Model Deployment (MloPs)</li>
+                    </ul>
+                    <div class="curriculum-dropdown">
+                        <button class="dropdown-trigger">See Full Curriculum ↓</button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-inner">
+                                <h5>Advanced Topics Included:</h5>
+                                <p>• Support Vector Machines (SVM)</p>
+                                <p>• Principal Component Analysis (PCA)</p>
+                                <p>• Cloud Deployment with AWS SageMaker</p>
+                                <p>• Feature Store Architectures</p>
+                                <p>• Drift Monitoring in Production</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="course-card-expanded tilt-card">
+                <div class="course-main-info">
+                    <div class="course-thumb ai"></div>
+                    <div class="course-content">
+                        <span class="course-tag">Advanced</span>
+                        <h3>Deep Learning & Neural Nets</h3>
+                        <p>Build brain-inspired models. From CNNs to Transformers, master the state-of-the-art.</p>
+                        <div class="course-meta">
+                            <span>⏱️ 16 Weeks</span>
+                            <span>⭐ 5.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-curriculum">
+                    <h4>Module Breakdown</h4>
+                    <ul>
+                        <li><span>01</span> PyTorch & Tensor Math</li>
+                        <li><span>02</span> NLP & Sequence Models</li>
+                        <li><span>03</span> Computer Vision Labs</li>
+                        <li><span>04</span> Transformer Architectures</li>
+                    </ul>
+                    <div class="curriculum-dropdown">
+                        <button class="dropdown-trigger">See Full Curriculum ↓</button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-inner">
+                                <h5>Advanced Topics Included:</h5>
+                                <p>• Custom Loss Functions in PyTorch</p>
+                                <p>• Distributed Training Paradigms</p>
+                                <p>• Quantization & Edge Deployment</p>
+                                <p>• Generative Adversarial Networks (GANs)</p>
+                                <p>• LLM Fine-Tuning with LoRA/QLoRA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="../src/main.js"></script>
+</body>
+
+</html>

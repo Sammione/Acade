@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acadence | Next-Gen Data Academy</title>
+  <!-- Same Google Fonts as before -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+  <div class="blob-bg"></div>
+  <div class="blob-bg-2"></div>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Acadence<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/courses.html">Courses</a></li>
+        <li><a href="pages/playground.html">Playground</a></li>
+        <li><a href="pages/pathfinder.html">Path Finder</a></li>
+        <li><a href="pages/experts.html">Experts</a></li>
+        <li><a href="pages/about.html">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon">🌓</button>
+        <button class="btn-primary">Get Enrolled</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero reveal active">
+      <div class="hero-content">
+        <div class="badge">Next Generation Learning</div>
+        <h1>Unlock the Power of <span>Data & AI</span></h1>
+        <p>Accelerate your career with our industry-leading curriculum in Data Science, Machine Learning, and Artificial
+          Intelligence.</p>
+        <div class="hero-actions">
+          <a href="pages/courses.html" class="btn-primary-large">Explore Courses</a>
+          <button class="btn-secondary-large" id="play-video">Watch Trailer</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">10k+</span>
+            <span class="stat-label">Students</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Courses</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">95%</span>
+            <span class="stat-label">Success Rate</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="glow-sphere"></div>
+        <div class="visual-card-1 tilt-card">
+          <div class="card-header">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <pre><code><span class="keyword">import</span> torch
+<span class="keyword">import</span> transformers
+
+model = NeuraCore()
+data = load_intelligence()
+model.train(data)
+<span class="comment"># Output: Optimization 99.8%</span>
+<span class="keyword">print</span>(<span class="string">"Ready for production"</span>)</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section reveal active">
+      <div class="testimonial-slider-container">
+        <div class="testimonial-slider" id="testimonial-slider">
+          <div class="testimonial-item active">
+            <div class="testi-quote">"Acadence didn't just teach me Python; they taught me how to think like an AI
+              Engineer."</div>
+            <div class="testi-author">
+              <strong>Marcus Aurelius</strong>
+              <span>Data Scientist @ Meta</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo">Acadence<span>.</span></div>
+        <p>Training the innovators of tomorrow.</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-group">
+          <h4>Academy</h4>
+          <ul>
+            <li><a href="pages/courses.html">Courses</a></li>
+            <li><a href="pages/pathfinder.html">Path Finder</a></li>
+          </ul>
+        </div>
+        <div class="link-group">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/experts.html">Experts</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

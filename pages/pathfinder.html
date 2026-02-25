@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Path Finder | Acadence</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+    <div class="blob-bg-3"></div>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Acadence<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="playground.html">Playground</a></li>
+                <li><a href="pathfinder.html">Path Finder</a></li>
+                <li><a href="experts.html">Experts</a></li>
+            </ul>
+            <button class="btn-primary">Join Today</button>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <section class="quiz-section reveal active">
+            <div class="quiz-card">
+                <div class="section-header">
+                    <span class="badge">Career Advisor</span>
+                    <h2>Find Your <span>Personalized Path</span></h2>
+                    <p>Our AI-driven pathfinder aligns your passion with the right curriculum.</p>
+                </div>
+                <div id="quiz-container">
+                    <div class="quiz-step active" data-step="1">
+                        <h3>What's your current experience level?</h3>
+                        <div class="quiz-options">
+                            <button class="quiz-opt" data-val="beginner">Absolute Beginner</button>
+                            <button class="quiz-opt" data-val="intermediate">Moderate Experience</button>
+                            <button class="quiz-opt" data-val="advanced">Pro Professional</button>
+                        </div>
+                    </div>
+                    <div class="quiz-step" data-step="2">
+                        <h3>What is your primary goal?</h3>
+                        <div class="quiz-options">
+                            <button class="quiz-opt" data-val="ds">Build Predictive Models</button>
+                            <button class="quiz-opt" data-val="ml">Master Neural Networks</button>
+                            <button class="quiz-opt" data-val="ai">Engineering AI Apps</button>
+                        </div>
+                    </div>
+                    <div class="quiz-result" id="quiz-result" style="display: none;">
+                        <h3>Based on your profile:</h3>
+                        <div class="result-box">
+                            <h2 id="recommended-course">Recommended Track</h2>
+                            <p id="recommended-desc">Loading your future...</p>
+                            <button class="btn-primary">Start Learning</button>
+                        </div>
+                        <button class="btn-link" id="reset-quiz">Start Over</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="../src/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground | Acadence</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Acadence<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="playground.html">Playground</a></li>
+                <li><a href="pathfinder.html">Path Finder</a></li>
+                <li><a href="experts.html">Experts</a></li>
+            </ul>
+            <button class="btn-primary">Get Console Access</button>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <section class="playground-layout reveal active" style="margin-top: 50px;">
+            <div class="play-info">
+                <span class="badge">Virtual Lab</span>
+                <h2>Interactive <span>AI Playground</span></h2>
+                <p>Test your logic in our virtual environment. No setup required.</p>
+                <ul class="feature-list" style="margin-top: 2rem; color: var(--text-muted);">
+                    <li>✓ Real-time Python execution</li>
+                    <li>✓ Pre-trained Acadence models</li>
+                    <li>✓ Visual result rendering</li>
+                </ul>
+            </div>
+            <div class="play-editor-wrapper tilt-card">
+                <div class="editor-header">
+                    <span>main.py</span>
+                    <button id="run-code" class="btn-run">▶ Run Script</button>
+                </div>
+                <div class="editor-body">
+                    <textarea id="code-input" spellcheck="false"># Acadence ML Lab
+import intelligence as ai
+
+# Load data
+data = ai.fetch("user_engagement")
+
+# Train & Predict
+model = ai.Brain(depth=3)
+model.fit(data)
+
+print(f"Prediction: {model.predict()}%")</textarea>
+                </div>
+                <div class="editor-console" id="console-output">
+                    > Ready for input...
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="../src/main.js"></script>
+</body>
+
+</html>
