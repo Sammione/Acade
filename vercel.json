@@ -1,10 +1,26 @@
 {
   "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
-    { "source": "/about", "destination": "/pages/about.html" },
-    { "source": "/courses", "destination": "/pages/courses.html" },
-    { "source": "/experts", "destination": "/pages/experts.html" },
-    { "source": "/pathfinder", "destination": "/pages/pathfinder.html" },
-    { "source": "/playground", "destination": "/pages/playground.html" }
+    {
+      "source": "/about",
+      "destination": "/pages/about"
+    },
+    {
+      "source": "/courses",
+      "destination": "/pages/courses"
+    },
+    {
+      "source": "/experts",
+      "destination": "/pages/experts"
+    },
+    {
+      "source": "/pathfinder",
+      "destination": "/pages/pathfinder"
+    },
+    {
+      "source": "/playground",
+      "destination": "/pages/playground"
+    }
   ]
 }
