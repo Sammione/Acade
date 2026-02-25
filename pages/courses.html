@@ -71,6 +71,7 @@
                             </div>
                         </div>
                     </div>
+                    <button class="btn-primary" style="width: 100%; margin-top: 2rem;">Enroll Now</button>
                 </div>
             </div>
 
@@ -109,6 +110,7 @@
                             </div>
                         </div>
                     </div>
+                    <button class="btn-primary" style="width: 100%; margin-top: 2rem;">Enroll Now</button>
                 </div>
             </div>
 
@@ -147,10 +149,43 @@
                             </div>
                         </div>
                     </div>
+                    <button class="btn-primary" style="width: 100%; margin-top: 2rem;">Enroll Now</button>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Enrollment Modal -->
+    <div class="modal-overlay" id="enroll-modal">
+        <div class="modal-container">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <h3>Apply to <span>Acadence</span></h3>
+                <p>Start your journey into high-performance AI.</p>
+            </div>
+            <form id="enroll-form">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="e.g. Jean Doe" required>
+                </div>
+                <div class="input-group">
+                    <label>Work Email</label>
+                    <input type="email" placeholder="jean@company.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Program of Interest</label>
+                    <select required>
+                        <option value="">Select a track...</option>
+                        <option value="ds">Data Science Path</option>
+                        <option value="ml">Machine Learning Mastery</option>
+                        <option value="ai">Deep Learning & Neural Nets</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary"
+                    style="width: 100%; margin-top: 1rem; padding: 1.2rem;">Complete Application</button>
+            </form>
+        </div>
+    </div>
 
     <script type="module" src="../src/main.js"></script>
 </body>

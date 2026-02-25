@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('testimonial-slider')) initTestimonials();
     if (document.getElementById('run-code')) initPlayground();
     if (document.querySelector('.dropdown-trigger')) initDropdowns();
+    initEnrollmentModal();
 });
 
 // --- Theme Management ---
@@ -172,6 +173,61 @@ function initDropdowns() {
                 trigger.textContent = 'Hide Details ↑';
             }
         });
+    });
+}
+
+// --- Enrollment Modal ---
+function initEnrollmentModal() {
+    const modal = document.getElementById('enroll-modal');
+    if (!modal) return;
+
+    const closeBtn = modal.querySelector('.modal-close');
+    const form = modal.querySelector('#enroll-form');
+
+    // Open modal on any primary enrollment button click
+    document.querySelectorAll('.btn-primary, .btn-primary-large, .btn-primary-small, .btn-outline').forEach(btn => {
+        if (btn.id === 'run-code') return; // Skip playground run button
+
+        btn.addEventListener('click', (e) => {
+            // If it's a link, let it be (like "Explore Courses"), otherwise open modal
+            if (btn.tagName === 'A') return;
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Lock scroll
+        });
+    });
+
+    closeBtn?.addEventListener('click', () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    // Close on outside click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    form?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.textContent = 'Processing...';
+
+        setTimeout(() => {
+            form.innerHTML = `
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎉</div>
+                    <h3>Application Received!</h3>
+                    <p style="color: var(--text-muted);">Our admissions team will contact you within 24 hours.</p>
+                </div>
+            `;
+            setTimeout(() => {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }, 3000);
+        }, 1500);
     });
 }
 
