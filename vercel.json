@@ -11,10 +11,6 @@
       "destination": "/pages/courses"
     },
     {
-      "source": "/experts",
-      "destination": "/pages/experts"
-    },
-    {
       "source": "/pathfinder",
       "destination": "/pages/pathfinder"
     },
